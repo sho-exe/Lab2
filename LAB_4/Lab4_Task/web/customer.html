@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title>JSP Implicit Objects</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Use JPS Scriptlet and JSP Expression in Application</h1>
+            <div class="card">
+                <form action="processCustomer.jsp">
+
+                    <h2>Customer Discount</h2>
+                    Customer Code<input type="text" name="customerCode"/><br/>
+                    <br/>
+                    Quantity<input type="number" name="quantity" /><br/>
+                    <br/>
+
+                    Customer Type
+                    <br>
+
+                    <input type="radio" name="customerType" value="1">Normal Customer
+                    <input type="radio" name="customerType" value="2"> Privilege Customer
+                    <br>
+                    
+                    <input type="submit" value="Submit" />
+                </form> 
+
+            </div>
+        </div>
+
+    </body>
+</html>
