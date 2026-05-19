@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Student Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+             body {
+                font-family: Arial, sans-serif;
+                margin: 40px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            input[type="text"], select {
+                width: 316px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="password"], select {
+                width: 316px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            button {
+                padding: 10px 15px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #218838;
+            }
+            .back-link {
+                display: inline-block;
+                margin-top: 15px;
+                text-decoration: none;
+                color: #007bff;
+            }
+            input[readonly] {
+                background-color: #e9ecef;
+                color: #495057;
+                cursor: not-allowed;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Register New Student</h2>
+
+        <form action="UserServlet" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="action" value="register">
+
+            Matric No: <input type="text" name="matricNo" required><br><br>
+            Full Name:  <input type="text" name="fullname" required><br><br>
+            Password:  <input type="password" name="password" required><br><br>
+            Profile Picture:  <input type="file" name="profileImage" accept="image/*" required><br><br>
+
+            <button type="submit" value="Register">Register</button>
+                        <a href="login.html">Login</a>
+
+        </form>
+    </body>
+</html>
