@@ -9,3 +9,5 @@ Lab_5 includes all Tasks (/Lab5_task) and Exercise (/Lab5_Exercise).
 Lab_6 includes Exercise (/Lab6_Exercise).
 
 Lab_7 includes all Tasks and Exercise Combined (/Lab7_Tasks).
+
+Lab_8 includes Employee_Management (/Employee_Management) and Exercise Car_Shop (/Car_Shop).
